@@ -1,12 +1,12 @@
 const { faker } = require('@faker-js/faker');
 
 let getRandomUser =()=> {
-  return [
-     faker.string.uuid(),
-    faker.internet.userName(),
-    faker.internet.email(),
-    faker.internet.password(),
-    
-  ];
+ return{
+   userId: faker.string.uuid(),
+    username: faker.internet.userName(),
+    email: faker.internet.email(),
+    password: faker.internet.password(),
+
+  };
 }
 console.log(getRandomUser())

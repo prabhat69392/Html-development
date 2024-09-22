@@ -1,0 +1,316 @@
+ /* this is the element selector */
+ h2{
+      color: rgb(89, 190, 34);
+       background-color: black ; 
+       text-align: center;
+       
+       font-weight:700 ;
+   }
+   p{
+    color: blue;
+    line-height: 1;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-family:optima,arial,bold;
+   }
+   
+   h1{
+     color:rgb(228, 19, 116);
+     text-align: center;
+     
+     font-weight: 700;
+     text-decoration: double red overline;
+     }
+     a{
+      text-decoration: none;
+     }
+     /* it is for revision of css chapter 1 and practice question  */
+      h3{
+         text-align: center;
+         font-size: 55px;
+         font-family: leage system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         color: #0ff595;
+         background-color: rgb(254, 249, 249);
+         text-decoration: double rgb(6, 155, 236) underline;
+         font-weight: 700;
+         line-height: 0.4;
+         letter-spacing: 2px;
+         text-transform: lowercase;
+        
+      }
+      /* this is the universal selector */
+      *{
+        font-family: 'Courier New', Courier, monospace;
+        /* background-color: aqua; */
+      }
+      /* this is the id selector */
+      /* #login{
+        background-color: rgb(2, 255, 230);
+        color: rgb(4, 18, 2);
+      }
+      #sign{
+        background-color: rgb(3, 248, 248);
+        color: black;
+      } */
+      /* this is the class selector */
+      .a{
+        background-color: rgb(2, 255, 230);
+        color: rgb(4, 18, 2);
+      }
+      /* this is the revision question */
+       h4{
+         color: #1b74e4;
+      }
+      /* select all the font change to courier new  */
+      *{   
+        font-family: "Courier New";
+      }
+      #search{
+       background-color: black;
+       color: aliceblue;
+      }
+      /* class selector */
+      .up{
+        
+        background-color: aqua;
+      }
+      /* this is the descendent selector  used in mutli level */
+      p a{
+        color: purple;
+        background-color: yellow;
+        text-decoration: underline;
+      }
+      /* sibling selector */
+      p+h3{
+         text-decoration: underline;
+      }
+      .up +button{
+         color: wheat;
+        background-color: blue;
+      }
+      /* child selector */
+      /* div>input{
+        color: darkgray;
+      } */
+      /* attribute selector */
+      /* input[type="text"]{
+         color: black ;
+      } */
+      /* input[type="password"]{
+        color: red ;
+      } */
+      /* input[type]{
+       background-color: blue;
+      } */
+      /* this is pseudo codes */
+      button:hover{
+       background-color: white;
+       color: black;
+      }
+      /* active */
+      button:active{
+        background-color: rgb(195, 129, 6);
+      }
+       p:active{
+        background-color: aqua;
+        color: black;
+       }
+       /* this is the checked */
+      input[type="radio"]:checked +label{
+        color: rgb(5, 176, 82);
+        font-weight: bold;
+      }
+      /* n of the term */
+      p:nth-of-type(2){
+       background-color: pink;
+      }
+      /* pseudo element  */
+      h1::first-letter{
+       color: blue;
+      }
+      /* selection */
+      p::selection{
+       background-color: yellow;
+       font-weight: bold;
+      }
+      /* inheritance of css */
+      div{
+       background-color: rgb(35, 45, 244);
+      }
+      /* if you want to inherit a input and buttom then you specify seperatedly  */
+       input{
+         background-color: inherit;
+       }
+       button{
+         background-color: inherit;
+       }
+       /* box model  */
+       /* div{height: 200px;
+         width: 500px;
+         background-color: blanchedalmond;
+         border-width: 5px;
+         border-style: dotted;
+         border-color: black;
+         border-radius: 20px;
+         border-top-color: blue;
+       } */
+       h1{
+        text-align: left;
+        font-size: 100px;
+        text-decoration: none;
+
+        }
+       h1::first-letter{
+         color:purple;
+       }
+       /* short hand to write the box border  (width style color*/
+       /* div{
+        border: 5px solid black;
+        border-left-color: blue;
+        border-style: dashed;
+        padding-top: 10px;
+        } */
+        button{
+          border: 2px solid black;
+          border-radius: 15px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          background-color: rgb(5, 221, 149);
+        }
+        /* padding shortcut 
+        it is used between border and content 
+
+        case 1:: padding all the sides
+        use padding :2px
+        case2:: top  & buttom | left & right
+        use padding : 2px 4px
+        case 3:: top | left and right | buttom
+        use padding : 1px 2px 3px
+        case 4:: clockwise direction move top->right->buttom->left
+        use padding : 1px 2px 3px 4px
+        */
+        button{
+         padding:  4 px;
+         /* applicable for four sides  */
+        }
+        /* margin */
+        /* div{
+        margin-bottom: 50px;
+        margin-left: 40px;
+        margin: 50px;
+        } */
+        button{
+         margin:40px ;
+        }
+        /* same as padding for shortcut */
+        #outer{
+         height:200px;
+         width: 70px;
+         border: 2px solid black;
+        }
+        .inner div  {
+          height: 50px;
+          width: 50px;
+          border: 2px solid black;
+          margin:10px;
+        }
+        #pract{
+          height: 150px;
+          width: 300px;
+          background-color: grey;
+          border: 2px dotted black;
+          
+        }
+        .face{
+          background-color: rgb(7, 117, 190);
+          height: 400px;
+          width: 400px;
+          
+          border-radius: 100px;
+          
+        }
+         .mouth{
+           width: 200px;
+           height: 75px;
+           background-color: rgb(236, 230, 230);
+           border-top-left-radius: 20%;
+           border-top-right-radius: 20%;
+           transform: rotate(180deg);
+           /* border-radius: 100%; */
+           position: relative;
+           top: 250px;
+           left: 100px;
+           
+         }
+         .mo{
+           width: 200px;
+           height: 5px;
+           background-color: rgb(16, 16, 16);
+           border-top-left-radius: 20%;
+           border-top-right-radius: 20%;
+           transform: rotate(180deg);
+           position: relative;
+           top: 230px;
+           left: 100px;
+         }
+         .nose{
+           width: 10px;
+           height: 50px;
+           background-color: rgb(244, 5, 13);
+           border-top-left-radius: 20%;
+           border-top-right-radius: 20%;
+           transform: rotate(180deg);
+           position: absolute;
+           top: 40px;
+           left: 190px;
+
+         }
+         .no{
+         width: 0;
+	height: 0;
+	border-left: 25px solid rgb(7, 117, 190) ;
+	border-right: 25px solid rgb(7, 117, 190) ;
+	border-bottom: 50px solid #111010;
+  position: relative;
+  top: 140px;
+  left: 170px;
+         
+         }
+         .eye , .eye1{
+           width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+            position: absolute;
+            top: 80px;
+            left: 100px;
+         }
+         .eye1{
+         left: 240px;
+         }
+         h1{
+           text-align: center;
+         
+         }
+         #container{
+         height: 300px;
+         width: 80%;
+         background-color: rgb(128, 104, 73);
+         border: 2px solid black;
+         display: flex;
+         flex-direction: row;
+         justify-content: flex-end;
+         flex-wrap: wrap;
+          align-items: flex-end;
+         }  
+         #container div{
+          height:100px;
+          width: 300px;
+          color: wheat;
+          font-size: 1.5em;
+          text-align: center;
+         }
+         
+        
+

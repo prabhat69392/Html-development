@@ -1,0 +1,55 @@
+.for{
+  color: aquamarine;
+  background-color: beige;
+}
+.box{
+   background-color: aqua;
+}
+div{
+  
+  /* border: solid 2px black; */
+  margin: auto;
+  
+}
+body{
+  text-align: center;
+ 
+ }
+.greet{
+  width: 300px;
+  height: 100px;
+  background-color: aquamarine;
+}
+/* ul{
+  background-color: blue;
+}
+li{
+  background-color: brown;
+} */
+.btn{
+border: solid 8px black;;
+text-align: center;
+width: 250px;
+height:200px;
+border-radius: 45px;
+margin: 50px;
+}
+.btn-container{
+text-align: center;
+ display: flex;
+ }
+.red{
+ background-color: rgb(179, 85, 85);
+}
+.blue{
+ background-color: rgb(92, 92, 172);
+}
+.yellow{
+ background-color: rgb(209, 209, 90);
+}
+.green{
+ background-color: rgb(90, 206, 90);
+}
+h1{
+ color: blue;
+}
