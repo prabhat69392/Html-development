@@ -10,3 +10,4 @@ let getRandomUser =()=> {
   };
 }
 console.log(getRandomUser())
+//there is somebody
