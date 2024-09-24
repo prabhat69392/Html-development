@@ -17,18 +17,15 @@ let getRandomUser =()=> {
 }
 
 //insert the new data
-let q="insert into user (userid,username,email,password) values (?,?,?,?)"
+let q="insert into user (userid,username,email,password) values ?"
 let data=[];
 for(let i=0;i<=5;i++){
   data.push(getRandomUser());
 }
 try{
 connection.query(q,[data],(err,res)=>{
-      if(err) {
-      console.error(err);}
-      else{
-       console.log(res)
-      }
+      if(err) throw err
+      console.log(res);
 })
 }
 catch(err){
