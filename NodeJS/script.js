@@ -5,8 +5,8 @@
 //    console.log("hello")
 //    n++;
 // }
-// const someValue= require("./first");
-// console.log(someValue.a)   
+const someValue= require("./first.js");
+console.log(someValue.a)   
 // var figlet = require("figlet");
 // figlet("Hello World!!", function (err, data) {
 //   if (err) {
@@ -15,6 +15,6 @@
 //     return;
 //   }
 //   console.log(data);
-// });
-import { generate, count } from "random-words";
-console.log(generate(5));
+// // });
+// import { generate, count } from "random-words";
+// console.log(generate(5));
