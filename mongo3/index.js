@@ -43,5 +43,3 @@ const chat1 =  new chat({
    msg:"hello",
    created_at: new Date(),
 })
-
- 
